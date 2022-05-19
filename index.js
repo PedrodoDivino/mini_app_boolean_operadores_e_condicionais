@@ -8,17 +8,17 @@ let dateDiff = today - departureDate
 
 let choseOption = prompt("Escolha como gostaria de exibir o tempo de partida \n 1- Segundos \n2- Minutos \n3- Horas \n 4- Dias")
 
-if (choseOption ==1 ){
-    let secondsOfDeparture = math.round(dateDiff / 1000)
+if (choseOption == 1 ){
+    let secondsOfDeparture = Math.round(dateDiff / 1000)
     alert("Tempo de vôo" + secondsOfDeparture + "Segundos ")
 } else if (choseOption == 2) {
-    let minutesOfDeparture = math.round(dateDiff / 1000 /60 )
+    let minutesOfDeparture = Math.round(dateDiff / 1000 /60 )
     alert("Tempo de vôo" + minutesOfDeparture + "minutos ")
 } else if (choseOption == 3) {
-    let hoursOfDeparture = math.round(dateDiff / 1000 /3600)
+    let hoursOfDeparture = Math.round(dateDiff / 1000 /3600)
     alert("Tempo de vôo" + hoursOfDeparture + "horas ")
 } else if (choseOption == 4) {
-    let daysOfDeparture = math.round(dateDiff / 1000 /3600 / 24)
+    let daysOfDeparture = Math.round(dateDiff / 1000 /3600 / 24)
     alert("Tempo de vôo" + daysOfDeparture + "dias ")
 }else {
     alert("Opção invalida")
